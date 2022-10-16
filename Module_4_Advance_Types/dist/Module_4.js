@@ -1,0 +1,16 @@
+"use strict";
+function greet(name) {
+    if (name)
+        console.log(name.toLocaleUpperCase());
+    else
+        console.log("Hola");
+}
+greet(undefined);
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date() };
+}
+let customer = getCustomer(0);
+if (customer !== null && customer !== undefined)
+    console.log(customer.birthday);
+console.log(customer === null || customer === void 0 ? void 0 : customer.birthday);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9kdWxlXzQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvTW9kdWxlXzQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQWtIQSxTQUFTLEtBQUssQ0FBQyxJQUErQjtJQUM1QyxJQUFJLElBQUk7UUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxpQkFBaUIsRUFBRSxDQUFDLENBQUM7O1FBQzNDLE9BQU8sQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUM7QUFDM0IsQ0FBQztBQUNELEtBQUssQ0FBQyxTQUFTLENBQUMsQ0FBQztBQVNqQixTQUFTLFdBQVcsQ0FBQyxFQUFVO0lBQzdCLE9BQU8sRUFBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxFQUFFLFFBQVEsRUFBRSxJQUFJLElBQUksRUFBRSxFQUFFLENBQUM7QUFDcEQsQ0FBQztBQUVELElBQUksUUFBUSxHQUFHLFdBQVcsQ0FBQyxDQUFDLENBQUMsQ0FBQztBQUU5QixJQUFJLFFBQVEsS0FBSyxJQUFJLElBQUksUUFBUSxLQUFLLFNBQVM7SUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsQ0FBQyxRQUFRLENBQUMsQ0FBQztBQUtoRixPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsYUFBUixRQUFRLHVCQUFSLFFBQVEsQ0FBRSxRQUFRLENBQUMsQ0FBQyJ9
